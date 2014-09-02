@@ -1,17 +1,30 @@
 package br.com.comerbeberagora;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
+import android.widget.Toast;
 
 
-public class Main extends ActionBarActivity {
+public class Main extends FragmentActivity {
 
-    @Override
+	 private AutoCompleteTextView actv;
+	
+	@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+        
+        String[] locais = getResources().getStringArray(R.array.locais);
+        ArrayAdapter adapter = 
+                new ArrayAdapter(this, android.R.layout.simple_list_item_1, locais);
+        
+        actv =  (AutoCompleteTextView) findViewById(R.id.locais);
+        actv.setAdapter(adapter);
+        
     }
 
 
