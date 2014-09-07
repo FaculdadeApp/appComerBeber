@@ -8,8 +8,10 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
-import android.widget.TextView;
+import android.annotation.SuppressLint;
+import android.app.AlertDialog;
 
+@SuppressLint("CutPasteId")
 public class Main extends FragmentActivity {
 
 	private AutoCompleteTextView actv;
@@ -20,14 +22,19 @@ public class Main extends FragmentActivity {
 		setContentView(R.layout.main);
 
 		String[] locais = getResources().getStringArray(R.array.locais);
-		ArrayAdapter adapter = new ArrayAdapter(this,
+		ArrayAdapter<Object> adapter = new ArrayAdapter<Object>(this,
 				android.R.layout.simple_list_item_1, locais);
 
 		actv = (AutoCompleteTextView) findViewById(R.id.locais);
 		actv.setAdapter(adapter);
 
+		/******************************************************************/
+
+		// Campos da Index
+		// Mensagem de alerta
+		final AlertDialog mensagem = new AlertDialog.Builder(this).create();
 		final AutoCompleteTextView textPesquisa = (AutoCompleteTextView) findViewById(R.id.locais);
-		final TextView campoVazio = (TextView) findViewById(R.id.campoVazio);
+
 		// Botão Pesquisar
 		Button botaoPesquisar = (Button) findViewById(R.id.pesquisar);
 		// Botão Cancelar
@@ -43,22 +50,26 @@ public class Main extends FragmentActivity {
 				textPesquisa.setText("");
 				textPesquisa.requestFocus();
 			}
-
 		});
 
 		// Botão Pesquisar
 
 		botaoPesquisar.setOnClickListener(new Button.OnClickListener() {
+
 			@Override
 			public void onClick(View v) {
 
 				if (textPesquisa.length() == 0) {
-					campoVazio.setText("Digite algo para pesquisar");
+					mensagem.setTitle("Necessário digitar algo");
+					mensagem.setIcon(R.drawable.ic_launcher);
+					mensagem.show();
 					textPesquisa.requestFocus();
 
 				}
 			}
 		});
+		/*****************************************************************/
+
 	}
 
 	@Override

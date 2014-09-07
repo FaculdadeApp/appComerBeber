@@ -47,14 +47,4 @@
         android:layout_toRightOf="@+id/pesquisar"
         android:text="@string/cancelarPesquisa" />
 
-    <TextView
-        android:id="@+id/campoVazio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/pesquisar"
-        android:layout_alignRight="@+id/campoPesquisar"
-        android:layout_below="@+id/pesquisar"
-        android:layout_marginTop="115dp"
-        android:text="" />
-
 </RelativeLayout>
