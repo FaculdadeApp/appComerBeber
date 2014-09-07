@@ -1,5 +1,6 @@
 package br.com.comerbeberagora;
 
+import android.app.ActionBar;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
@@ -18,10 +19,15 @@ public class Main extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         
+        // Faz com que o Nome na ActionBar seja um Botão
+        ActionBar action = getActionBar();
+        action.setDisplayHomeAsUpEnabled(true);
+        action.setBackgroundDrawable(getResources().getDrawable(R.drawable.bg));
+        
+        //Criando um ARRAY e preenchendo com o array usado no XML para o autoComplete
         String[] locais = getResources().getStringArray(R.array.locais);
         ArrayAdapter adapter = 
                 new ArrayAdapter(this, android.R.layout.simple_list_item_1, locais);
-        
         actv =  (AutoCompleteTextView) findViewById(R.id.locais);
         actv.setAdapter(adapter);
         
@@ -41,7 +47,7 @@ public class Main extends FragmentActivity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-        if (id == R.id.action_settings) {
+        if (id == R.id.opcao2) {
             return true;
         }
         return super.onOptionsItemSelected(item);
