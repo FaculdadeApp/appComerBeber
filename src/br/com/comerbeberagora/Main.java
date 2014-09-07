@@ -1,5 +1,6 @@
 package br.com.comerbeberagora;
 
+import android.app.ActionBar;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
@@ -20,6 +21,11 @@ public class Main extends FragmentActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
+		
+		// Faz com que o Nome na ActionBar seja um Botão
+        ActionBar action = getActionBar();
+        action.setDisplayHomeAsUpEnabled(true);
+        action.setBackgroundDrawable(getResources().getDrawable(R.drawable.bg));
 
 		String[] locais = getResources().getStringArray(R.array.locais);
 		ArrayAdapter<Object> adapter = new ArrayAdapter<Object>(this,
@@ -80,14 +86,17 @@ public class Main extends FragmentActivity {
 	}
 
 	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-		if (id == R.id.action_settings) {
-			return true;
-		}
-		return super.onOptionsItemSelected(item);
-	}
+
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+        if (id == R.id.opcao2) {
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
 }
