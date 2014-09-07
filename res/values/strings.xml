@@ -3,21 +3,7 @@
 
     <string name="app_name">Comer Beber Agora</string>
     <string name="action_settings">Settings</string>
-
-    
     <string name="Estabelecimento">Escolha o Estabelecimento</string>
-    <string name="pesquisarEstabelecimento">Pesquisar</string>
     <string name="cancelarPesquisa">Cancelar</string>
-    
-    <string-array name = "locais">
-         <item> Afeganistão </item>
-         <item> Albânia </item>
-         <item> Argélia </item>
-         <item> Samoa Americana </item>
-         <item> Andorra </item>
-         <item> Angola </item>
-         <item> Anguilla </item>item>
-         <item> Antarctica </item>
-     </string-array>
-    
+
 </resources>
