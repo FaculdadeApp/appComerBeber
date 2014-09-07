@@ -1,15 +1,15 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".Main" >
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:paddingBottom="@dimen/activity_vertical_margin"
+   android:paddingLeft="@dimen/activity_horizontal_margin"
+   android:paddingRight="@dimen/activity_horizontal_margin"
+   android:paddingTop="@dimen/activity_vertical_margin"
+   tools:context=".Main" >
 
-    <TextView
-        android:id="@+id/campoPesquisar"
+   <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Estabelecimento" />
@@ -18,14 +18,13 @@
         android:id="@+id/locais"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/campoPesquisar"
-        android:layout_below="@+id/campoPesquisar"
-        android:completionHint="Digite o local que desejar ir"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
         android:completionThreshold="1"
+        android:completionHint="Digite o local que desejar ir"
         android:ems="10"
         android:inputType="text"
         android:textColor="#ff0000" >
-
         <requestFocus />
     </AutoCompleteTextView>
 
@@ -46,15 +45,5 @@
         android:layout_marginLeft="34dp"
         android:layout_toRightOf="@+id/pesquisar"
         android:text="@string/cancelarPesquisa" />
-
-    <TextView
-        android:id="@+id/campoVazio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/pesquisar"
-        android:layout_alignRight="@+id/campoPesquisar"
-        android:layout_below="@+id/pesquisar"
-        android:layout_marginTop="115dp"
-        android:text="" />
 
 </RelativeLayout>
