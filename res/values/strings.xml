@@ -3,7 +3,7 @@
 
     <string name="app_name">Comer Beber Agora</string>
     <string name="action_settings">Settings</string>
-    <string name="Estabelecimento">Escolha o Estabelecimento</string>
+    <string name="Estabelecimento">Escolha o tipo do estabelecimento</string>
     <string name="cancelarPesquisa">Cancelar</string>
 
 </resources>

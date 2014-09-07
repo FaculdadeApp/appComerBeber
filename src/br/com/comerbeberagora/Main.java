@@ -28,7 +28,7 @@ public class Main extends FragmentActivity {
 		actv = (AutoCompleteTextView) findViewById(R.id.locais);
 		actv.setAdapter(adapter);
 
-		/******************************************************************/
+		/************************************** BOTAO INDEX *******************************************/
 
 		// Campos da Index
 		// Mensagem de alerta
@@ -68,7 +68,7 @@ public class Main extends FragmentActivity {
 				}
 			}
 		});
-		/*****************************************************************/
+		/************************ FIM DO BOTAO INDEX *****************************************/
 
 	}
 
