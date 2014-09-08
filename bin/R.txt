@@ -332,6 +332,7 @@ int layout abc_search_view 0x7f030016
 int layout abc_simple_decor 0x7f030017
 int layout main 0x7f030018
 int layout support_simple_spinner_dropdown_item 0x7f030019
+int layout tab_categ 0x7f03001a
 int menu main 0x7f0d0000
 int string Estabelecimento 0x7f0a0010
 int string abc_action_bar_home_description 0x7f0a0001
