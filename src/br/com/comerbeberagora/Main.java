@@ -25,6 +25,8 @@ public class Main extends FragmentActivity {
 		// Faz com que o Nome na ActionBar seja um Botão
         ActionBar action = getActionBar();
         action.setDisplayHomeAsUpEnabled(true);
+        
+        //carrega o background do action bar
         action.setBackgroundDrawable(getResources().getDrawable(R.drawable.bg));
 
 		String[] locais = getResources().getStringArray(R.array.locais);
@@ -34,7 +36,7 @@ public class Main extends FragmentActivity {
 		actv = (AutoCompleteTextView) findViewById(R.id.locais);
 		actv.setAdapter(adapter);
 
-		/******************************************************************/
+		/************************************** BOTAO INDEX *******************************************/
 
 		// Campos da Index
 		// Mensagem de alerta
@@ -74,7 +76,7 @@ public class Main extends FragmentActivity {
 				}
 			}
 		});
-		/*****************************************************************/
+		/************************ FIM DO BOTAO INDEX *****************************************/
 
 	}
 
