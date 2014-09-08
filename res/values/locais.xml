@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <string name="pesquisarEstabelecimento">Pesquisar</string>
-
-    <string-array name="locais">
-        <item> Bar</item>
-        <item> Boate</item>
-        <item>Buteco</item>
-        <item>Churrascaria</item>
-        <item>Pastelaria</item>
-        <item> Pizzaria</item>
-        <item> Crepe</item>
-        <item> Happy Hour</item>
-        <item> Lanche</item>
-        <item>Outros</item>
-    </string-array>
-
+     <string name="pesquisarEstabelecimento">Pesquisar</string>
+     <string-array name = "locais">
+         <item> Bares </item>
+         <item> Boates </item>
+         <item> Pizzarias </item>
+         <item> Crepes </item>
+         <item> Happy Hour </item>
+         <item> Lanches </item>
+         <item>Outros</item>
+     </string-array>
 </resources>
