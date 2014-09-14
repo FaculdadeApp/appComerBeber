@@ -23,11 +23,11 @@ public class Main extends FragmentActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
-		
+
 		// Faz com que o Nome na ActionBar seja um Botão
-        ActionBar action = getActionBar();
-        action.setDisplayHomeAsUpEnabled(true);
-        action.setBackgroundDrawable(getResources().getDrawable(R.drawable.bg));
+		ActionBar action = getActionBar();
+		action.setDisplayHomeAsUpEnabled(true);
+		action.setBackgroundDrawable(getResources().getDrawable(R.drawable.bg));
 
 		String[] locais = getResources().getStringArray(R.array.locais);
 		ArrayAdapter<Object> adapter = new ArrayAdapter<Object>(this,
@@ -36,11 +36,12 @@ public class Main extends FragmentActivity {
 		actv = (AutoCompleteTextView) findViewById(R.id.locais);
 		actv.setAdapter(adapter);
 
-		/******************************************************************/
+		/************************************** BOTAO INDEX *******************************************/
 
 		// Campos da Index
 		// Mensagem de alerta
 		final AlertDialog mensagem = new AlertDialog.Builder(this).create();
+		// Espaço para digitar o que irá procurar
 		final AutoCompleteTextView textPesquisa = (AutoCompleteTextView) findViewById(R.id.locais);
 
 		// Botão Pesquisar
@@ -76,7 +77,7 @@ public class Main extends FragmentActivity {
 				}
 			}
 		});
-		/*****************************************************************/
+		/************************ FIM DO BOTAO INDEX *****************************************/
 
 	}
 
@@ -88,17 +89,15 @@ public class Main extends FragmentActivity {
 	}
 
 	@Override
-
-
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-        if (id == R.id.opcao2) {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// Handle action bar item clicks here. The action bar will
+		// automatically handle clicks on the Home/Up button, so long
+		// as you specify a parent activity in AndroidManifest.xml.
+		int id = item.getItemId();
+		if (id == R.id.opcao2) {
+			return true;
+		}
+		return super.onOptionsItemSelected(item);
+	}
 
 }
