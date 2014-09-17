@@ -6,11 +6,14 @@
     <string name="Estabelecimento">Escolha o tipo do estabelecimento</string>
     <string name="cancelarPesquisa">Cancelar</string>
 
-    
-    <!--************************ Menu ************************** -->
+    <!-- ************************ Menu ************************** -->
 
+    <string name="opcao1"> Opção 1 </string>
+    <string name="opcao3"> Opção 3 </string>
+    <string name="opcao4"> Opção 4 </string>
 
-	<string name="opcao1"> Opção 1 </string>
-	<string name="opcao3"> Opção 3 </string>
-	<string name="opcao4"> Opção 4 </string>
+    <!-- Comentario -->
+    <string name="pesquisarcomentarios">Pesquisar</string>
+    <!-- Fim do comentario -->
+
 </resources>

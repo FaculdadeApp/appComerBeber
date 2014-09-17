@@ -237,7 +237,8 @@ int drawable abc_textfield_searchview_right_holo_dark 0x7f020055
 int drawable abc_textfield_searchview_right_holo_light 0x7f020056
 int drawable bg 0x7f020057
 int drawable ic_launcher 0x7f020058
-int drawable ic_splash 0x7f020059
+int drawable ic_search 0x7f020059
+int drawable ic_splash 0x7f02005a
 int id action_bar 0x7f05001c
 int id action_bar_activity_content 0x7f050015
 int id action_bar_container 0x7f05001b
@@ -249,6 +250,7 @@ int id action_context_bar 0x7f05001d
 int id action_menu_divider 0x7f050016
 int id action_menu_presenter 0x7f050017
 int id action_mode_close_button 0x7f050024
+int id action_search 0x7f050043
 int id activity_chooser_view_content 0x7f050025
 int id always 0x7f05000b
 int id beginning 0x7f050011
@@ -331,11 +333,13 @@ int layout abc_search_dropdown_item_icons_2line 0x7f030015
 int layout abc_search_view 0x7f030016
 int layout abc_simple_decor 0x7f030017
 int layout categ_frag 0x7f030018
-int layout main 0x7f030019
-int layout splash 0x7f03001a
-int layout support_simple_spinner_dropdown_item 0x7f03001b
-int layout tab_categ 0x7f03001c
+int layout comentarios 0x7f030019
+int layout main 0x7f03001a
+int layout splash 0x7f03001b
+int layout support_simple_spinner_dropdown_item 0x7f03001c
+int layout tab_categ 0x7f03001d
 int menu main 0x7f0d0000
+int menu menu_comentarios 0x7f0d0001
 int string Estabelecimento 0x7f0a0010
 int string abc_action_bar_home_description 0x7f0a0001
 int string abc_action_bar_up_description 0x7f0a0002
@@ -357,6 +361,7 @@ int string opcao1 0x7f0a0012
 int string opcao3 0x7f0a0013
 int string opcao4 0x7f0a0014
 int string pesquisarEstabelecimento 0x7f0a000d
+int string pesquisarcomentarios 0x7f0a0015
 int style AppBaseTheme 0x7f0b008b
 int style AppTheme 0x7f0b008c
 int style TextAppearance_AppCompat_Base_CompactMenu_Dialog 0x7f0b0063
