@@ -8,43 +8,11 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".Main" >
 
-    <TextView
-        android:id="@+id/campoPesquisar"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/fragmentTab"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/Estabelecimento" />
-
-    <AutoCompleteTextView
-        android:id="@+id/locais"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/campoPesquisar"
-        android:layout_below="@+id/campoPesquisar"
-        android:completionHint="Digite o local que desejar ir"
-        android:completionThreshold="1"
-        android:ems="10"
-        android:inputType="text"
-        android:textColor="#ff0000" >
-
-        <requestFocus />
-    </AutoCompleteTextView>
-
-    <Button
-        android:id="@+id/pesquisar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/locais"
-        android:layout_marginTop="20dp"
-        android:text="@string/pesquisarEstabelecimento" />
-
-    <Button
-        android:id="@+id/cancelarPesquisa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/pesquisar"
-        android:layout_alignBottom="@+id/pesquisar"
-        android:layout_marginLeft="34dp"
-        android:layout_toRightOf="@+id/pesquisar"
-        android:text="@string/cancelarPesquisa" />
-
+        android:orientation="vertical" >
+    </LinearLayout>
+    
 </RelativeLayout>
