@@ -1,8 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#800000"
     android:orientation="vertical" >
-    
 
-</LinearLayout>
+    <!-- Campo de pesquisa -->
+
+    <EditText
+        android:id="@+id/campoPesquisar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:ems="10"
+        android:hint="@string/pesquisacomentario"
+        android:inputType="textPostalAddress|textCapWords|textNoSuggestions" />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/campoPesquisar"
+        android:layout_below="@+id/campoPesquisar"
+        android:layout_marginTop="17dp"
+        android:drawableLeft="@drawable/ic_action_cancel"
+        android:text="@string/btnCancelar" />
+
+    <Button
+        android:id="@+id/btnPesquisar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnCancelar"
+        android:layout_alignBottom="@+id/btnCancelar"
+        android:layout_alignLeft="@+id/campoPesquisar"
+        android:drawableLeft="@drawable/ic_search"
+        android:text="@string/btnPesquisar" />
+
+</RelativeLayout>

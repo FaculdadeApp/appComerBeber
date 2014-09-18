@@ -1081,9 +1081,10 @@ containing a value of this type.
         public static final int abc_textfield_searchview_right_holo_dark=0x7f020055;
         public static final int abc_textfield_searchview_right_holo_light=0x7f020056;
         public static final int bg=0x7f020057;
-        public static final int ic_launcher=0x7f020058;
-        public static final int ic_search=0x7f020059;
-        public static final int ic_splash=0x7f02005a;
+        public static final int ic_action_cancel=0x7f020058;
+        public static final int ic_launcher=0x7f020059;
+        public static final int ic_search=0x7f02005a;
+        public static final int ic_splash=0x7f02005b;
     }
     public static final class id {
         public static final int action_bar=0x7f05001c;
@@ -1097,13 +1098,17 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
         public static final int action_mode_close_button=0x7f050024;
-        public static final int action_search=0x7f050043;
         public static final int activity_chooser_view_content=0x7f050025;
         public static final int always=0x7f05000b;
         public static final int beginning=0x7f050011;
+        public static final int btnCancelar=0x7f05003f;
+        public static final int btnPesquisar=0x7f050040;
+        public static final int calendarView1=0x7f050041;
+        public static final int campoPesquisar=0x7f05003e;
         public static final int checkbox=0x7f05002d;
         public static final int collapseActionView=0x7f05000d;
         public static final int combo=0x7f05003d;
+        public static final int comentariosGerais=0x7f050043;
         public static final int default_activity_button=0x7f050028;
         public static final int dialog=0x7f05000e;
         public static final int disableHome=0x7f050008;
@@ -1112,7 +1117,7 @@ containing a value of this type.
         public static final int end=0x7f050013;
         public static final int expand_activities_button=0x7f050026;
         public static final int expanded_menu=0x7f05002c;
-        public static final int fragmentTab=0x7f05003e;
+        public static final int fragmentTab=0x7f050042;
         public static final int home=0x7f050014;
         public static final int homeAsUp=0x7f050005;
         public static final int icon=0x7f05002a;
@@ -1124,10 +1129,10 @@ containing a value of this type.
         public static final int never=0x7f050009;
         public static final int none=0x7f050010;
         public static final int normal=0x7f050000;
-        public static final int opcao1=0x7f05003f;
-        public static final int opcao2=0x7f050040;
-        public static final int opcao3=0x7f050041;
-        public static final int opcao4=0x7f050042;
+        public static final int opcao1=0x7f050044;
+        public static final int opcao2=0x7f050045;
+        public static final int opcao3=0x7f050046;
+        public static final int opcao4=0x7f050047;
         public static final int progress_circular=0x7f050018;
         public static final int progress_horizontal=0x7f050019;
         public static final int radio=0x7f05002f;
@@ -1207,14 +1212,15 @@ containing a value of this type.
         public static final int abc_simple_decor=0x7f030017;
         public static final int categ_frag=0x7f030018;
         public static final int comentarios=0x7f030019;
-        public static final int main=0x7f03001a;
-        public static final int splash=0x7f03001b;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001c;
-        public static final int tab_categ=0x7f03001d;
+        public static final int comentariosgerais=0x7f03001a;
+        public static final int main=0x7f03001b;
+        public static final int splash=0x7f03001c;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001d;
+        public static final int tab_categ=0x7f03001e;
+        public static final int telacomentarios=0x7f03001f;
     }
     public static final class menu {
         public static final int main=0x7f0d0000;
-        public static final int menu_comentarios=0x7f0d0001;
     }
     public static final class string {
         public static final int Estabelecimento=0x7f0a0010;
@@ -1260,16 +1266,22 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with_application=0x7f0a000b;
         public static final int action_settings=0x7f0a000f;
         public static final int app_name=0x7f0a000e;
+        public static final int btnCancelar=0x7f0a0017;
+        /**  Fim Campo Pesquisar 
+ Botao 
+         */
+        public static final int btnPesquisar=0x7f0a0016;
         public static final int cancelarPesquisa=0x7f0a0011;
         /**  ************************ Menu ************************** 
          */
         public static final int opcao1=0x7f0a0012;
         public static final int opcao3=0x7f0a0013;
         public static final int opcao4=0x7f0a0014;
-        public static final int pesquisarEstabelecimento=0x7f0a000d;
-        /**  Comentario 
+        /**  Comentarios 
+ Campo pesquisar 
          */
-        public static final int pesquisarcomentarios=0x7f0a0015;
+        public static final int pesquisacomentario=0x7f0a0015;
+        public static final int pesquisarEstabelecimento=0x7f0a000d;
     }
     public static final class style {
         /** 

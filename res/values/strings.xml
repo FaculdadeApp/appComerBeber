@@ -12,8 +12,14 @@
     <string name="opcao3"> Opção 3 </string>
     <string name="opcao4"> Opção 4 </string>
 
-    <!-- Comentario -->
-    <string name="pesquisarcomentarios">Pesquisar</string>
-    <!-- Fim do comentario -->
+    <!-- Comentarios -->
+    <!-- Campo pesquisar -->
+    <string name="pesquisacomentario">Pesquisar Comentário</string>
+    <!-- Fim Campo Pesquisar -->
+    <!-- Botao -->
+    <string name="btnPesquisar">Pesquisar</string>
+    <string name="btnCancelar">Cancelar</string>
 
-</resources>
+    <!-- Fim do Botao -->
+    <!-- Fim do comentario -->
+</resources>

@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="11"
-        android:targetSdkVersion="19" />
+        android:targetSdkVersion="21" />
 
     <application
         android:allowBackup="true"
@@ -32,15 +32,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="br.com.comerbeberagora.comentario.Comentario"
-            android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:name=".comentario.Comentarios"
+            android:label="Comentarios" >
         </activity>
-       
     </application>
 
 </manifest>
